@@ -115,7 +115,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WebDisplayer\WebDisplayer.csproj">
+    <ProjectReference Include="..\WebDisplayer\CFPcrawler.WebDisplayer.csproj">
       <Project>{EEF4B8BF-5A9E-4ED0-A31B-B252E21ED3F7}</Project>
       <Name>WebDisplayer</Name>
     </ProjectReference>

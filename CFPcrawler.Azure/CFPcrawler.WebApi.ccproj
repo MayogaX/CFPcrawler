@@ -37,12 +37,12 @@
     <ServiceConfiguration Include="ServiceConfiguration.Cloud.cscfg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WebDisplayer\WebDisplayer.csproj">
-      <Name>WebDisplayer</Name>
+    <ProjectReference Include="..\WebDisplayer\CFPcrawler.WebDisplayer.csproj">
+      <Name>CFPcrawler.WebDisplayer</Name>
       <Project>{eef4b8bf-5a9e-4ed0-a31b-b252e21ed3f7}</Project>
       <Private>True</Private>
       <RoleType>Web</RoleType>
-      <RoleName>WebDisplayer</RoleName>
+      <RoleName>CFPcrawler.WebDisplayer</RoleName>
       <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
   </ItemGroup>
