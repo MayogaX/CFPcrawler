@@ -117,7 +117,7 @@
   <ItemGroup>
     <ProjectReference Include="..\WebDisplayer\CFPcrawler.WebDisplayer.csproj">
       <Project>{EEF4B8BF-5A9E-4ED0-A31B-B252E21ED3F7}</Project>
-      <Name>WebDisplayer</Name>
+      <Name>CFPcrawler.WebDisplayer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
