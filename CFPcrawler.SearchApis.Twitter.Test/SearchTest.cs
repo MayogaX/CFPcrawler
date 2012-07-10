@@ -11,9 +11,10 @@ namespace CFPcrawler.SearchApis.Twitter.Test
     [TestClass]
     public class SearchTest
     {
+
+        Dictionary<String, String> result = new Dictionary<String, String>();
         public SearchTest()
         {
-            
         }
 
         private TestContext testContextInstance;
@@ -35,11 +36,19 @@ namespace CFPcrawler.SearchApis.Twitter.Test
         }
 
         [TestMethod]
-        public void Search_Anything_Return_Anything()
+        public void Search_And_Not_Return_Complex_Error()
         {
+            result.Add("error", "Sorry, your query is too complex. Please reduce complexity and try again.");
             Search search = new Search();
-            string result = search.Search();
-            Assert.AreNotEqual(result, ResultTypes.ComplexQuery);
+            Assert.AreNotEqual(result, search.SearchAll());
+        }
+
+        [TestMethod]
+        public void Search_And_Not_Return_420_Error()
+        {
+            result.Add("error", "You have been rate limited. Enhance your calm.");
+            Search search = new Search();
+            Assert.AreNotEqual(result, search.SearchAll());
         }
     }
 }
